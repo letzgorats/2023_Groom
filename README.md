@@ -1,7 +1,7 @@
 # Week 1
 <hr>
 
-### 👉 [Youtube HTML,CSS 하드코딩](https://github.com/letzgorats/Bootcamp/tree/main/Youtube)
+### 👉 [Youtube 페이지 만들기](https://github.com/letzgorats/Bootcamp/tree/main/Youtube)
 ![youtubePage](https://github.com/letzgorats/Bootcamp/assets/77396189/634ea09e-b951-47b3-b119-8d99daad2c16)
 
 
