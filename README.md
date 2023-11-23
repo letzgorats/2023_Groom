@@ -14,4 +14,4 @@
 <hr>
 
 ### 👉 [To-Do-List 만들기](https://github.com/letzgorats/Bootcamp/tree/main/week2/ToDoList)
-![To-Do-List](https://github.com/letzgorats/Bootcamp/assets/77396189/bf999adb-d3d1-49e3-983a-10344f63b98b)
+![To-Do-List](https://github.com/letzgorats/Bootcamp/assets/77396189/8116f9e6-1789-4786-8c24-d3d183500a6a)
