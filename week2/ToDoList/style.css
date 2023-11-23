@@ -1,0 +1,177 @@
+/* CSS 초기화 */
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* 전체 페이지 배경 설정 */
+  /* #5b7065, black */
+  body {
+    background: rgba(48, 64, 64, 1.0); /* 단색 배경 */
+
+    /* 그라디언트 배경 */
+    background: -webkit-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    background: -moz-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    background: radial-gradient(ellipse at center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    font-family: 'Shadows Into Light', cursive; /* 폰트 설정 */
+    min-height: 100vh;
+  }
+  
+  /* 버튼 공통 스타일 */
+  button {
+    height: fit-content;
+    cursor: pointer;
+    color: #04202c;
+    background-color: #c9d1c8;
+  }
+  
+  /* 앱 컨테이너 스타일 */
+  .app {
+    width: 600px;
+    margin: auto;
+    padding-top: 50px;
+    color: white;
+  }
+  
+  /* 할 일 입력 부분 스타일 */
+  .input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 10px 0px;
+  }
+  
+  /* 입력 필드 스타일 */
+  .to-do-input input {
+    width: 250px;
+    font-family: inherit;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    outline: none;
+  }
+  
+/* 할 일 입력 버튼 스타일 */
+  .to-do-input button {
+    color: #5b7065;
+    font-family: inherit;
+    border: none;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  /* 할 일 목록 스타일 */
+  .to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* 아이콘 스타일 */
+  .to-do-list i {
+    color: #c9d1c8;
+    cursor: pointer;
+  }
+  
+  /* 편집 아이콘 스타일 */
+  .to-do-list .fa-pen-to-square {
+    color: #5b7065;
+  }
+  
+  /* 버튼 스타일 */
+  .to-do-list button {
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+  }
+  
+  /* 할 일 항목 스타일 */
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* 입력 컨트롤러 스타일 */
+  .input-controller {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* 텍스트 영역 스타일 */
+  .input-controller textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    line-height: 1.4;
+    color: white;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: inherit;
+    transition: all 0.30s ease-in-out;
+  }
+  
+  /* 텍스트 영역 포커스 시 스타일 */
+  textarea:focus {
+    box-shadow: 0 0 5px white;
+  }
+  
+  /* 편집 컨트롤러 스타일 */
+  .edit-controller {
+    display: flex;
+    gap: 5px;
+  }
+  
+  /* 업데이트 컨트롤러 (숨김 처리) */
+  .update-controller {
+    display: none;
+  }
+  
+  /* 모바일 화면 대응 */
+  @media(max-width: 768px) {
+    .app {
+      width: 95%;
+      text-align: center;
+    }
+  
+    .input-header {
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
+  
+    .to-do-input {
+      display: flex;
+    }
+  
+    .to-do-input input {
+      width: 300px;
+    }
+  
+  }
+
+
+  /* 완료된 항목 스타일 */
+.completed-item-style {
+    border-color: green; /* 테두리 색상 */
+}
+
+.completed-item-style textarea {
+    font-family: inherit;
+    text-decoration: line-through white;
+    color: green; /* 텍스트 색상 */
+    text-decoration-color: green; /* 취소선 색상 */
+}
+
